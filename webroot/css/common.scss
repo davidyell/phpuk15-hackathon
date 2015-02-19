@@ -30,8 +30,8 @@ header h1 {
     padding: 10px 15px;
     background-color: #0088cc;
     color: #fff;
-    margin: 10px 0;
-    font: bold 34px Arial, sans-serif;
+    margin: 0 0 10px;
+    font: bold 38px Arial, sans-serif;
     text-transform: uppercase;
 }
 
@@ -42,6 +42,7 @@ div.instructions {
     border: 1px solid #ccc;
     border-radius: 7px;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    font-size: 18px;
 }
 
 .btn {
@@ -55,9 +56,20 @@ div.instructions {
     color: darken(#87cc08, 30%);
     font-weight: bold;
     &.go-button {
-        background-color: #c1c1c1;
-        border: 1px solid darken(#c1c1c1, 15%);
-    }   
+        float: left;
+        margin-left: 400px;
+        background-color: darken(#00a1ff, 10%);
+        border: 1px solid darken(#00a1ff, 25%);
+        color: #fff;
+    }
+    &.draw {
+        background-color: #e5a22d;
+        border: 1px solid darken(#e5a22d, 20%);
+    }
+}
+
+p.buttons {
+    text-align: center;
 }
 
 .play-space {
@@ -87,12 +99,13 @@ div.instructions {
 
 .card {
     width: 200px;
-    height: 300px;
+    height: 300px - 8px;
     display: block;
     margin: 0 auto 10px;
-    border: 5px solid #fff;
+    border: 8px solid #fff;
     border-radius: 6px;
     background-color: #ffcb30;
+    box-shadow: 0 0 4px rgba(0,0,0,0.6);
     h2 {
         height: 100px;
         margin: 0;
@@ -101,31 +114,47 @@ div.instructions {
         background-color: #ccc;
     }
     .description {
-        height: 148px;
+        height: 141px;
         margin: -10px 5px 5px 5px;
         background-color: #fff;
         border-radius: 5px;
+        font-size: 13px;
+        position: relative;
         p {
-            padding: 10px;
+            padding: 0 10px 10px 10px
         }
         p.type {
             background-color: #ccc;
-            padding-left: 42px;
+            padding: 10px 10px 10px 42px;
             &.positive {
-                background: #ccc url(../img/thumb_up-64.png) 2px 3px no-repeat;
+                background: #ccc url(../img/thumb_up-64.png) 2px 2px no-repeat;
                 background-size: 32px 32px;
             }
             &.negative {
-                background: #ccc url(../img/thumb_down-64.png) 2px 3px no-repeat;
+                background: #ccc url(../img/thumb_down-64.png) 2px 2px no-repeat;
                 background-size: 32px 32px;
             }
             &.neutral {
-                background: #ccc url(../img/smile-64.png) 2px 3px no-repeat;
+                background: #ccc url(../img/smile-64.png) 2px 2px no-repeat;
                 background-size: 32px 32px;
             }
             &.exchange {
                 background: #ccc url(../img/Refresh.png) 3px 4px no-repeat;
                 background-size: 30px 30px;
+            }
+        }
+        span.rarity {
+            width: 32px;
+            height: 32px;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            &.rarity-2 {
+                background: url(../img/bullet_white.png) no-repeat;
+            }
+            &.rarity-3 {
+                background: url(../img/bullet_yellow.png) no-repeat;
             }
         }
     }
@@ -139,6 +168,12 @@ div.instructions {
         background-color: #c1f28a;
         h2 {
             background-color: #c1f28a;
+        }
+    }
+    &.neutral {
+        background-color: #ffcb30;
+        h2 {
+            background-color: #ffcb30;
         }
     }
 }

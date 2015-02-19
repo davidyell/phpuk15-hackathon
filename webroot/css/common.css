@@ -10,13 +10,12 @@ div.card-wrapper {
   perspective: 1000;
   margin: 0 auto; }
 
-/*div.card-wrapper:hover .card, */
 div.card-wrapper.hover .card, .card-wrapper.flip .card {
   transform: rotateY(180deg); }
 
 div.card-wrapper, .front, .back {
   width: 200px;
-  height: 300px; }
+  height: 292px; }
 
 .card {
   transition: 0.6s;
@@ -33,7 +32,7 @@ div.card-wrapper, .front, .back {
   z-index: 2;
   /* for firefox 31 */
   transform: rotateY(0deg);
-  background: url(../img/gplaypattern.png) repeat; }
+  background: url(../img/paisley.jpg) repeat; }
 
 .back {
   transform: rotateY(180deg); }
@@ -58,8 +57,8 @@ header h1 {
   padding: 10px 15px;
   background-color: #0088cc;
   color: #fff;
-  margin: 10px 0;
-  font: bold 34px Arial, sans-serif;
+  margin: 0 0 10px;
+  font: bold 38px Arial, sans-serif;
   text-transform: uppercase; }
 
 div.instructions {
@@ -68,7 +67,8 @@ div.instructions {
   background-color: #c1c1c1;
   border: 1px solid #ccc;
   border-radius: 7px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 18px; }
 
 .btn {
   margin: 10px auto;
@@ -81,8 +81,17 @@ div.instructions {
   color: #263902;
   font-weight: bold; }
   .btn.go-button {
-    background-color: #c1c1c1;
-    border: 1px solid #9b9b9b; }
+    float: left;
+    margin-left: 400px;
+    background-color: #0081cc;
+    border: 1px solid #005080;
+    color: #fff; }
+  .btn.draw {
+    background-color: #e5a22d;
+    border: 1px solid #996813; }
+
+p.buttons {
+  text-align: center; }
 
 .play-space {
   width: 475px;
@@ -103,12 +112,13 @@ div.instructions {
 
 .card {
   width: 200px;
-  height: 300px;
+  height: 292px;
   display: block;
   margin: 0 auto 10px;
-  border: 5px solid #fff;
+  border: 8px solid #fff;
   border-radius: 6px;
-  background-color: #ffcb30; }
+  background-color: #ffcb30;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6); }
   .card h2 {
     height: 100px;
     margin: 0;
@@ -116,27 +126,40 @@ div.instructions {
     text-align: center;
     background-color: #ccc; }
   .card .description {
-    height: 148px;
+    height: 141px;
     margin: -10px 5px 5px 5px;
     background-color: #fff;
-    border-radius: 5px; }
+    border-radius: 5px;
+    font-size: 13px;
+    position: relative; }
     .card .description p {
-      padding: 10px; }
+      padding: 0 10px 10px 10px; }
     .card .description p.type {
       background-color: #ccc;
-      padding-left: 42px; }
+      padding: 10px 10px 10px 42px; }
       .card .description p.type.positive {
-        background: #cccccc url(../img/thumb_up-64.png) 2px 3px no-repeat;
+        background: #cccccc url(../img/thumb_up-64.png) 2px 2px no-repeat;
         background-size: 32px 32px; }
       .card .description p.type.negative {
-        background: #cccccc url(../img/thumb_down-64.png) 2px 3px no-repeat;
+        background: #cccccc url(../img/thumb_down-64.png) 2px 2px no-repeat;
         background-size: 32px 32px; }
       .card .description p.type.neutral {
-        background: #cccccc url(../img/smile-64.png) 2px 3px no-repeat;
+        background: #cccccc url(../img/smile-64.png) 2px 2px no-repeat;
         background-size: 32px 32px; }
       .card .description p.type.exchange {
         background: #cccccc url(../img/Refresh.png) 3px 4px no-repeat;
         background-size: 30px 30px; }
+    .card .description span.rarity {
+      width: 32px;
+      height: 32px;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      .card .description span.rarity.rarity-2 {
+        background: url(../img/bullet_white.png) no-repeat; }
+      .card .description span.rarity.rarity-3 {
+        background: url(../img/bullet_yellow.png) no-repeat; }
   .card.negative {
     background-color: #f48b8b; }
     .card.negative h2 {
@@ -145,3 +168,7 @@ div.instructions {
     background-color: #c1f28a; }
     .card.positive h2 {
       background-color: #c1f28a; }
+  .card.neutral {
+    background-color: #ffcb30; }
+    .card.neutral h2 {
+      background-color: #ffcb30; }

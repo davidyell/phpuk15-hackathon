@@ -7,14 +7,13 @@ div.card-wrapper {
     perspective: 1000;
     margin: 0 auto;
 }
-
-/*div.card-wrapper:hover .card, */ div.card-wrapper.hover .card, .card-wrapper.flip .card {
+div.card-wrapper.hover .card, .card-wrapper.flip .card {
     transform: rotateY(180deg);
 }
 
 div.card-wrapper, .front, .back {
     width: 200px;
-    height: 300px;
+    height: 300px - 8px;
 }
 .card {
     transition: 0.6s;
@@ -31,7 +30,7 @@ div.card-wrapper, .front, .back {
     z-index: 2;
     /* for firefox 31 */
     transform: rotateY(0deg);
-    background: url(../img/gplaypattern.png) repeat;
+    background: url(../img/paisley.jpg) repeat;
 }
 .back {
     transform: rotateY(180deg);

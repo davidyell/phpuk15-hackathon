@@ -2,6 +2,7 @@
 	<p>A drinking game for 4+ players.
 
 	<div class='instructions'>
+		<p>How to play..</p>
 		<ul>
 			<li>Split your group into two even teams.</li>
 			<li>These teams will compete.</li>
@@ -13,4 +14,5 @@
 	</div>
 	
 	<?php echo $this->Html->link('Commence battle!', ['controller' => 'plays', 'action' => 'draw'], ['class' => 'btn go-button']);?>
+	<div class="clearfix"><!-- blank --></div>
 </div>

@@ -24,7 +24,6 @@ class CardsTable extends Table
         $this->table('cards');
         $this->displayField('title');
         $this->primaryKey('id');
-        $this->addBehavior('Timestamp');
     }
 
     /**

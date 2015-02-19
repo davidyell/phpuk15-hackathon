@@ -14,8 +14,10 @@
 	
 	<div class='clearfix'><!-- blank --></div>
 	
-	<p>
+	<p class="buttons">
 		<?php echo $this->Html->link('Play!', '#play', ['class' => 'btn', 'id' => 'play-btn']);?>
-		<?php echo $this->Html->link('Draw again', ['controller' => 'plays', 'action' => 'draw'], ['class' => 'btn go-button']);?>
+		<?php echo $this->Html->link('Draw again', ['controller' => 'plays', 'action' => 'draw'], ['class' => 'btn draw']);?>
 	</p>
+	
+	<p><?php echo $this->Html->link('Start a new game', ['controller' => 'plays', 'action' => 'start']);?></p>
 </div>
