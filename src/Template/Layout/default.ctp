@@ -29,6 +29,10 @@
         </footer>
     </div>
 	
+	<?php echo $this->Html->script([
+		'jquery-2.1.3.min',
+		'common'
+	]);?>
 	<?= $this->fetch('script') ?>
 </body>
 </html>

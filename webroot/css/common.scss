@@ -4,6 +4,8 @@
 */
 $font: Arial, Verdana, sans-serif;
 
+@import "flip";
+
 html {
     background-color: #333;
     font-family: $font;
@@ -42,9 +44,8 @@ div.instructions {
     box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
 }
 
-.btn.go-button {
-    display: block;
-    margin: 10px;
+.btn {
+    margin: 10px auto;
     padding: 10px 15px;
     text-align: center;
     background-color: #87cc08;
@@ -53,10 +54,15 @@ div.instructions {
     text-decoration: none;
     color: darken(#87cc08, 30%);
     font-weight: bold;
+    &.go-button {
+        background-color: #c1c1c1;
+        border: 1px solid darken(#c1c1c1, 15%);
+    }   
 }
 
 .play-space {
     width: 475px;
+    min-height: 390px;
     &.one {
         float: left;
     }

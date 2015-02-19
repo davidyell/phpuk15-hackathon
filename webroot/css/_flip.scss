@@ -1,0 +1,41 @@
+/* 
+    Created on : 19-Feb-2015, 15:14:50
+    Author     : David Yell <neon1024@gmail.com>
+*/
+
+div.card-wrapper {
+    perspective: 1000;
+    margin: 0 auto;
+}
+/*div.card-wrapper:hover .card, div.card-wrapper.hover .card {
+    transform: rotateY(180deg);
+}*/
+
+div.card-wrapper:hover .card, div.card-wrapper.hover .card, .card-wrapper.flip .card {
+    transform: rotateY(180deg);
+}
+
+div.card-wrapper, .front, .back {
+    width: 200px;
+    height: 300px;
+}
+.card {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;   
+}
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    background: url(../img/gplaypattern.png) repeat;
+}
+.back {
+    transform: rotateY(180deg);
+}
