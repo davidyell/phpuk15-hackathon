@@ -3,7 +3,7 @@
 <head>
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $this->fetch('title') ?></title>
+    <title>Shot Wars!</title>
     <?= $this->Html->meta('icon') ?>
 
 	<?= $this->Html->css('common'); ?>

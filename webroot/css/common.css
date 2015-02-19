@@ -18,12 +18,13 @@ p, li, a {
   padding: 10px;
   background-color: #efefef; }
 
-h1 {
+header h1 {
   padding: 10px 15px;
   background-color: #0088cc;
   color: #fff;
   margin: 10px 0;
-  font: bold 34px Arial, sans-serif; }
+  font: bold 34px Arial, sans-serif;
+  text-transform: uppercase; }
 
 div.instructions {
   padding: 10px;
@@ -95,8 +96,8 @@ div.instructions {
         background: #cccccc url(../img/smile-64.png) 2px 3px no-repeat;
         background-size: 32px 32px; }
       .card .description p.type.exchange {
-        background: #cccccc url(../img/Refresh.png) 2px 3px no-repeat;
-        background-size: 32px 32px; }
+        background: #cccccc url(../img/Refresh.png) 3px 4px no-repeat;
+        background-size: 30px 30px; }
   .card.negative {
     background-color: #f48b8b; }
     .card.negative h2 {

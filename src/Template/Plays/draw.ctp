@@ -9,4 +9,6 @@
 	</div>
 	
 	<div class='clearfix'><!-- blank --></div>
+	
+	<?php echo $this->Html->link('Draw again', ['controller' => 'plays', 'action' => 'draw'], ['class' => 'btn go-button']);?>
 </div>

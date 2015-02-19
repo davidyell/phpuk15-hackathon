@@ -24,12 +24,13 @@ p, li, a {
     background-color: #efefef;
 }
 
-h1 {
+header h1 {
     padding: 10px 15px;
     background-color: #0088cc;
     color: #fff;
     margin: 10px 0;
     font: bold 34px Arial, sans-serif;
+    text-transform: uppercase;
 }
 
 div.instructions {
