@@ -56,8 +56,6 @@ div.instructions {
 
 .play-space {
     width: 475px;
-    /*background-color: #558202;*/
-    /*border: 2px solid darken(#558202, 15%);*/
     &.one {
         float: left;
     }
@@ -95,12 +93,34 @@ div.instructions {
         text-align: center;
         background-color: #ccc;
     }
-    p {
-        height: 110px;
-        margin: 5px;
-        padding: 20px;
+    .description {
+        height: 148px;
+        margin: -10px 5px 5px 5px;
         background-color: #fff;
         border-radius: 5px;
+        p {
+            padding: 10px;
+        }
+        p.type {
+            background-color: #ccc;
+            padding-left: 42px;
+            &.positive {
+                background: #ccc url(../img/thumb_up-64.png) 2px 3px no-repeat;
+                background-size: 32px 32px;
+            }
+            &.negative {
+                background: #ccc url(../img/thumb_down-64.png) 2px 3px no-repeat;
+                background-size: 32px 32px;
+            }
+            &.neutral {
+                background: #ccc url(../img/smile-64.png) 2px 3px no-repeat;
+                background-size: 32px 32px;
+            }
+            &.exchange {
+                background: #ccc url(../img/Refresh.png) 3px 4px no-repeat;
+                background-size: 30px 30px;
+            }
+        }
     }
     &.negative {
         background-color: #f48b8b;

@@ -46,9 +46,7 @@ div.instructions {
   font-weight: bold; }
 
 .play-space {
-  width: 475px;
-  /*background-color: #558202;*/
-  /*border: 2px solid darken(#558202, 15%);*/ }
+  width: 475px; }
   .play-space.one {
     float: left; }
   .play-space.two {
@@ -77,12 +75,28 @@ div.instructions {
     padding: 40px 0 0 0;
     text-align: center;
     background-color: #ccc; }
-  .card p {
-    height: 110px;
-    margin: 5px;
-    padding: 20px;
+  .card .description {
+    height: 148px;
+    margin: -10px 5px 5px 5px;
     background-color: #fff;
     border-radius: 5px; }
+    .card .description p {
+      padding: 10px; }
+    .card .description p.type {
+      background-color: #ccc;
+      padding-left: 42px; }
+      .card .description p.type.positive {
+        background: #cccccc url(../img/thumb_up-64.png) 2px 3px no-repeat;
+        background-size: 32px 32px; }
+      .card .description p.type.negative {
+        background: #cccccc url(../img/thumb_down-64.png) 2px 3px no-repeat;
+        background-size: 32px 32px; }
+      .card .description p.type.neutral {
+        background: #cccccc url(../img/smile-64.png) 2px 3px no-repeat;
+        background-size: 32px 32px; }
+      .card .description p.type.exchange {
+        background: #cccccc url(../img/Refresh.png) 2px 3px no-repeat;
+        background-size: 32px 32px; }
   .card.negative {
     background-color: #f48b8b; }
     .card.negative h2 {
