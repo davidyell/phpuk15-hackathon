@@ -1,0 +1,117 @@
+/* 
+    Created on : 19-Feb-2015, 13:07:19
+    Author     : David Yell <neon1024@gmail.com>
+*/
+$font: Arial, Verdana, sans-serif;
+
+html {
+    background-color: #333;
+    font-family: $font;
+}
+
+p, li, a {
+    font-family: $font;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #efefef;
+}
+
+h1 {
+    padding: 10px 15px;
+    background-color: #0088cc;
+    color: #fff;
+    margin: 10px 0;
+    font: bold 34px Arial, sans-serif;
+}
+
+div.instructions {
+    padding: 10px;
+    margin: 10px;
+    background-color: #c1c1c1;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.btn.go-button {
+    display: block;
+    margin: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: #87cc08;
+    border: 1px solid darken(#87cc08, 15%);
+    border-radius: 5px;
+    text-decoration: none;
+    color: darken(#87cc08, 30%);
+    font-weight: bold;
+}
+
+.play-space {
+    width: 475px;
+    /*background-color: #558202;*/
+    /*border: 2px solid darken(#558202, 15%);*/
+    &.one {
+        float: left;
+    }
+    &.two {
+        float: right;
+    }
+    h2 {
+        &.team {
+            margin: 0 0 20px 0;
+            font: bold 32px Arial, Verdana, sans-serif;
+            color: #fff;
+            text-align: center;
+            &.red {
+                background-color: red;
+            }
+            &.blue {
+                background-color: blue;
+            }
+        }   
+    }
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin: 0 auto 10px;
+    border: 5px solid #fff;
+    border-radius: 6px;
+    background-color: #ffcb30;
+    h2 {
+        height: 100px;
+        margin: 0;
+        padding: 40px 0 0 0;
+        text-align: center;
+        background-color: #ccc;
+    }
+    p {
+        height: 110px;
+        margin: 5px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    &.negative {
+        background-color: #f48b8b;
+        h2 {
+            background-color: #f48b8b;
+        }
+    }
+    &.positive {
+        background-color: #c1f28a;
+        h2 {
+            background-color: #c1f28a;
+        }
+    }
+}

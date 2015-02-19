@@ -1,0 +1,93 @@
+/* 
+    Created on : 19-Feb-2015, 13:07:19
+    Author     : David Yell <neon1024@gmail.com>
+*/
+html {
+  background-color: #333;
+  font-family: Arial, Verdana, sans-serif; }
+
+p, li, a {
+  font-family: Arial, Verdana, sans-serif; }
+
+.clearfix {
+  clear: both; }
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #efefef; }
+
+h1 {
+  padding: 10px 15px;
+  background-color: #0088cc;
+  color: #fff;
+  margin: 10px 0;
+  font: bold 34px Arial, sans-serif; }
+
+div.instructions {
+  padding: 10px;
+  margin: 10px;
+  background-color: #c1c1c1;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+
+.btn.go-button {
+  display: block;
+  margin: 10px;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: #87cc08;
+  border: 1px solid #568205;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #263902;
+  font-weight: bold; }
+
+.play-space {
+  width: 475px;
+  /*background-color: #558202;*/
+  /*border: 2px solid darken(#558202, 15%);*/ }
+  .play-space.one {
+    float: left; }
+  .play-space.two {
+    float: right; }
+  .play-space h2.team {
+    margin: 0 0 20px 0;
+    font: bold 32px Arial, Verdana, sans-serif;
+    color: #fff;
+    text-align: center; }
+    .play-space h2.team.red {
+      background-color: red; }
+    .play-space h2.team.blue {
+      background-color: blue; }
+
+.card {
+  width: 200px;
+  height: 300px;
+  display: block;
+  margin: 0 auto 10px;
+  border: 5px solid #fff;
+  border-radius: 6px;
+  background-color: #ffcb30; }
+  .card h2 {
+    height: 100px;
+    margin: 0;
+    padding: 40px 0 0 0;
+    text-align: center;
+    background-color: #ccc; }
+  .card p {
+    height: 110px;
+    margin: 5px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px; }
+  .card.negative {
+    background-color: #f48b8b; }
+    .card.negative h2 {
+      background-color: #f48b8b; }
+  .card.positive {
+    background-color: #c1f28a; }
+    .card.positive h2 {
+      background-color: #c1f28a; }
