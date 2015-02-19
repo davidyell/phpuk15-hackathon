@@ -7,11 +7,8 @@ div.card-wrapper {
     perspective: 1000;
     margin: 0 auto;
 }
-/*div.card-wrapper:hover .card, div.card-wrapper.hover .card {
-    transform: rotateY(180deg);
-}*/
 
-div.card-wrapper:hover .card, div.card-wrapper.hover .card, .card-wrapper.flip .card {
+/*div.card-wrapper:hover .card, */ div.card-wrapper.hover .card, .card-wrapper.flip .card {
     transform: rotateY(180deg);
 }
 

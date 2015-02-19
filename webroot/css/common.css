@@ -1,1 +1,147 @@
-div.card-wrapper{perspective:1000;margin:0 auto}div.card-wrapper:hover .card,div.card-wrapper.hover .card,.card-wrapper.flip .card{transform:rotateY(180deg)}div.card-wrapper,.front,.back{width:200px;height:300px}.card{transition:0.6s;transform-style:preserve-3d;position:relative}.front,.back{backface-visibility:hidden;position:absolute;top:0;left:0}.front{z-index:2;transform:rotateY(0deg);background:url(../img/gplaypattern.png) repeat}.back{transform:rotateY(180deg)}html{background-color:#333;font-family:Arial,Verdana,sans-serif}p,li,a{font-family:Arial,Verdana,sans-serif}.clearfix{clear:both}#container{width:960px;margin:0 auto;padding:10px;background-color:#efefef}header h1{padding:10px 15px;background-color:#0088cc;color:#fff;margin:10px 0;font:bold 34px Arial, sans-serif;text-transform:uppercase}div.instructions{padding:10px;margin:10px;background-color:#c1c1c1;border:1px solid #ccc;border-radius:7px;box-shadow:1px 1px 1px rgba(0,0,0,0.4)}.btn{margin:10px auto;padding:10px 15px;text-align:center;background-color:#87cc08;border:1px solid #568205;border-radius:5px;text-decoration:none;color:#263902;font-weight:bold}.btn.go-button{background-color:#c1c1c1;border:1px solid #9b9b9b}.play-space{width:475px;min-height:390px}.play-space.one{float:left}.play-space.two{float:right}.play-space h2.team{margin:0 0 20px 0;font:bold 32px Arial, Verdana, sans-serif;color:#fff;text-align:center}.play-space h2.team.red{background-color:red}.play-space h2.team.blue{background-color:blue}.card{width:200px;height:300px;display:block;margin:0 auto 10px;border:5px solid #fff;border-radius:6px;background-color:#ffcb30}.card h2{height:100px;margin:0;padding:40px 0 0 0;text-align:center;background-color:#ccc}.card .description{height:148px;margin:-10px 5px 5px 5px;background-color:#fff;border-radius:5px}.card .description p{padding:10px}.card .description p.type{background-color:#ccc;padding-left:42px}.card .description p.type.positive{background:#ccc url(../img/thumb_up-64.png) 2px 3px no-repeat;background-size:32px 32px}.card .description p.type.negative{background:#ccc url(../img/thumb_down-64.png) 2px 3px no-repeat;background-size:32px 32px}.card .description p.type.neutral{background:#ccc url(../img/smile-64.png) 2px 3px no-repeat;background-size:32px 32px}.card .description p.type.exchange{background:#ccc url(../img/Refresh.png) 3px 4px no-repeat;background-size:30px 30px}.card.negative{background-color:#f48b8b}.card.negative h2{background-color:#f48b8b}.card.positive{background-color:#c1f28a}.card.positive h2{background-color:#c1f28a}
+/* 
+    Created on : 19-Feb-2015, 13:07:19
+    Author     : David Yell <neon1024@gmail.com>
+*/
+/* 
+    Created on : 19-Feb-2015, 15:14:50
+    Author     : David Yell <neon1024@gmail.com>
+*/
+div.card-wrapper {
+  perspective: 1000;
+  margin: 0 auto; }
+
+/*div.card-wrapper:hover .card, */
+div.card-wrapper.hover .card, .card-wrapper.flip .card {
+  transform: rotateY(180deg); }
+
+div.card-wrapper, .front, .back {
+  width: 200px;
+  height: 300px; }
+
+.card {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative; }
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+  background: url(../img/gplaypattern.png) repeat; }
+
+.back {
+  transform: rotateY(180deg); }
+
+html {
+  background-color: #333;
+  font-family: Arial, Verdana, sans-serif; }
+
+p, li, a {
+  font-family: Arial, Verdana, sans-serif; }
+
+.clearfix {
+  clear: both; }
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #efefef; }
+
+header h1 {
+  padding: 10px 15px;
+  background-color: #0088cc;
+  color: #fff;
+  margin: 10px 0;
+  font: bold 34px Arial, sans-serif;
+  text-transform: uppercase; }
+
+div.instructions {
+  padding: 10px;
+  margin: 10px;
+  background-color: #c1c1c1;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+
+.btn {
+  margin: 10px auto;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: #87cc08;
+  border: 1px solid #568205;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #263902;
+  font-weight: bold; }
+  .btn.go-button {
+    background-color: #c1c1c1;
+    border: 1px solid #9b9b9b; }
+
+.play-space {
+  width: 475px;
+  min-height: 390px; }
+  .play-space.one {
+    float: left; }
+  .play-space.two {
+    float: right; }
+  .play-space h2.team {
+    margin: 0 0 20px 0;
+    font: bold 32px Arial, Verdana, sans-serif;
+    color: #fff;
+    text-align: center; }
+    .play-space h2.team.red {
+      background-color: red; }
+    .play-space h2.team.blue {
+      background-color: blue; }
+
+.card {
+  width: 200px;
+  height: 300px;
+  display: block;
+  margin: 0 auto 10px;
+  border: 5px solid #fff;
+  border-radius: 6px;
+  background-color: #ffcb30; }
+  .card h2 {
+    height: 100px;
+    margin: 0;
+    padding: 40px 0 0 0;
+    text-align: center;
+    background-color: #ccc; }
+  .card .description {
+    height: 148px;
+    margin: -10px 5px 5px 5px;
+    background-color: #fff;
+    border-radius: 5px; }
+    .card .description p {
+      padding: 10px; }
+    .card .description p.type {
+      background-color: #ccc;
+      padding-left: 42px; }
+      .card .description p.type.positive {
+        background: #cccccc url(../img/thumb_up-64.png) 2px 3px no-repeat;
+        background-size: 32px 32px; }
+      .card .description p.type.negative {
+        background: #cccccc url(../img/thumb_down-64.png) 2px 3px no-repeat;
+        background-size: 32px 32px; }
+      .card .description p.type.neutral {
+        background: #cccccc url(../img/smile-64.png) 2px 3px no-repeat;
+        background-size: 32px 32px; }
+      .card .description p.type.exchange {
+        background: #cccccc url(../img/Refresh.png) 3px 4px no-repeat;
+        background-size: 30px 30px; }
+  .card.negative {
+    background-color: #f48b8b; }
+    .card.negative h2 {
+      background-color: #f48b8b; }
+  .card.positive {
+    background-color: #c1f28a; }
+    .card.positive h2 {
+      background-color: #c1f28a; }
