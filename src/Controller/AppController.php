@@ -15,6 +15,7 @@
 namespace App\Controller;
 
 use Cake\Controller\Controller;
+use Cake\Event\Event;
 
 /**
  * Application Controller
@@ -38,4 +39,11 @@ class AppController extends Controller
     {
         $this->loadComponent('Flash');
     }
+	
+	public function beforeFilter(Event $event)
+	{
+		if (isset($this->request->params['prefix']) && $this->request->params['prefix'] === 'admin') {
+            $this->layout = 'admin';
+        }
+	}
 }

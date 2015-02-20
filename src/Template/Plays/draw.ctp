@@ -17,7 +17,7 @@
 	<p class="buttons">
 		<?php echo $this->Html->link('Play!', '#play', ['class' => 'btn', 'id' => 'play-btn']);?>
 		<?php echo $this->Html->link('Draw again', ['controller' => 'plays', 'action' => 'draw'], ['class' => 'btn draw']);?>
+		<br><br>
+		<?php echo $this->Html->link('Start a new game', ['controller' => 'plays', 'action' => 'start']);?>
 	</p>
-	
-	<p><?php echo $this->Html->link('Start a new game', ['controller' => 'plays', 'action' => 'start']);?></p>
 </div>

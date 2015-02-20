@@ -14,7 +14,11 @@ class PlaysController extends AppController {
 		$this->loadModel('Cards');
 	}
 
-	
+	/**
+	 * Start the game, reset the number of rounds if any are set
+	 * 
+	 * @return void
+	 */
 	public function start()
 	{
 		if ($this->request->session()->check('rounds.played')) {
@@ -22,6 +26,12 @@ class PlaysController extends AppController {
 		}
 	}
 	
+	/**
+	 * Do a draw of cards. Select two random cards, based on the round and
+	 * the rarity.
+	 * 
+	 * @return void
+	 */
 	public function draw()
 	{
 		if (!$this->request->session()->check('rounds.played')) {
@@ -37,6 +47,9 @@ class PlaysController extends AppController {
 			->limit('2')
 			->order(['RAND()']);
 			
+		if ($rounds < 3) {
+			$cards->where(['rarity < 2']);
+		}
 		if ($rounds < 5) {
 			$cards->where(['rarity < 3']);
 		}

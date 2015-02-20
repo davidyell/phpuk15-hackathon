@@ -1,0 +1,61 @@
+/* 
+    Created on : 20-Feb-2015, 10:16:50
+    Author     : David Yell <neon1024@gmail.com>
+*/
+html {
+    background-color: #333;
+    font: 14px Arial, sans-serif;
+}
+#container {
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+table {
+    border: 1px solid #ccc;
+    tr {
+        &:nth-child(even) {
+            background-color: #efefef;
+        }
+        td {
+            border: 1px solid #ccc;
+            padding: 3px;
+        }
+    }
+}
+
+/*
+    Document   : pagination
+    Created on : Dec 19, 2012, 2:35:45 PM
+    Author     : David Yell
+    Description:
+        Basic styles for the CakePHP pagination
+*/
+.paginator{
+    height: 36px;
+    margin: 5px 0;
+}
+.pagination li {
+  display: block;
+  padding: 7px 13px;
+  float: left;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px 1px 1px 0;
+}
+.pagination li a {
+  display: block;
+}
+.pagination li:first-child {
+  border-left-width: 1px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination li:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination .disabled{
+    color: #ccc;
+}
