@@ -1,26 +1,16 @@
-# CakePHP Application Skeleton
+# Shot Wars!
+A hackathon entry in the PHP UK 2015 conference. A card based drinking game.
 
-[![Build Status](https://api.travis-ci.org/cakephp/app.png)](https://travis-ci.org/cakephp/app)
-[![License](https://poser.pugx.org/cakephp/app/license.svg)](https://packagist.org/packages/cakephp/app)
-
-A skeleton for creating applications with [CakePHP](http://cakephp.org) 3.0.
-
-This is an unstable repository and should be treated as an alpha.
+## Technologies
+* PHP 5.4+
+* MySQL
+* [CakePHP 3](http://book.cakephp.org/3.0/en/installation.html)
 
 ## Installation
-
-1. Download [Composer](http://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist -s dev cakephp/app [app_name]`.
-
-If Composer is installed globally, run
-```bash
-composer create-project --prefer-dist -s dev cakephp/app [app_name]
-```
-
-You should now be able to visit the path to where you installed the app and see
-the setup traffic lights.
+Clone the repo into a folder on your computer and run `composer install` to grab the dependancies.
+The current deck of cards are stored in an sql file in `config/schema/phpuk15-cards.sql`
 
 ## Configuration
+Rename your `config/app.default.php` file to `config/app.php` and configure the datasources to connect
+to your local database.
 
-Read and edit `config/app.php` and setup the 'Datasources' and any other
-configuration relevant for your application.
