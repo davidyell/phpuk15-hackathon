@@ -44,6 +44,19 @@ html {
 p, li, a {
   font-family: Arial, Verdana, sans-serif; }
 
+p.center {
+  text-align: center; }
+
+p.rounds {
+  width: 100px;
+  margin: 15px auto;
+  padding: 8px;
+  text-align: center;
+  background-color: #ccc;
+  border: 1px solid #a6a6a6;
+  border-radius: 6px;
+  font-size: 28px; }
+
 .clearfix {
   clear: both; }
 

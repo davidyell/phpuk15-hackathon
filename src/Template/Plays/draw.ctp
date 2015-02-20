@@ -17,7 +17,13 @@
 	<p class="buttons">
 		<?php echo $this->Html->link('Play!', '#play', ['class' => 'btn', 'id' => 'play-btn']);?>
 		<?php echo $this->Html->link('Draw again', ['controller' => 'plays', 'action' => 'draw'], ['class' => 'btn draw']);?>
+	</p>
+	<p class="rounds">
+		Round<br><?php echo $this->request->session()->read('rounds.played');?>
+	</p>
+	<p class="center">
 		<br><br>
 		<?php echo $this->Html->link('Start a new game', ['controller' => 'plays', 'action' => 'start']);?>
 	</p>
+	
 </div>
